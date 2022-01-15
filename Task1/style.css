@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+     font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/banner.png);
+    background-position: right;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: #dada2d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 100px;
+}
+
+.text-box p{
+    font-size: 24px;
+    color: #fff;
+}
+
+.text-box input[type=text] {
+
+        float: center;
+        padding: 6px;
+        border: none;
+        padding: 12px 34px;
+        position: relative;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 20px;
+        border-radius: 15px;
+      }
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid white;
+    padding: 6px 12px;
+    font-size: 20px;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid green;
+    background: green;
+    transition: 0.5s;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .fa {
+    display: none;
+}
+
+.features{
+    padding: 50px 100px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.FEATUREDDESTINATIONS {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.features {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+div.contact
+{
+    background-color: lightgray;
+    padding: 35px 50px;
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+}
+div.contact h1
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+div.contact h4
+{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.abt {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.abt h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.abt p{
+    color: black;
+    font-size: 20px;
+    font-weight: 2000;
+    line-height: 22px;
+    padding: 10px;
+}
+
+div.about {
+    background-color: lightgray;
+    padding: 35px 50px;
+    text-align: center;
+    
+}
+
+
+@media(max-width: 700px) {
+    .text-box h1{
+        font-size: 40px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+    
+    .nav-links {
+        position: absolute;
+        background:green;
+        height: 100vh;
+        width:200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+
+    nav .fa {
+        display: block;
+        color:  #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .hero-btn {
+        margin: 20px;
+    }
+}
