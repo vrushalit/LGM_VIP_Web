@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .box {
+    width: 25rem;
+    height: 15rem;
+    background-color:rgb(124, 124, 124);
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .grid-box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: PINK;
+
+  }
+
+  li, a{
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    color:rgb(12, 6, 1);
+  }
+
+  header {
+
+    padding: 30px 10%;
+    background-color:rgb(173, 228, 70);
+  }
+
+  button {
+    padding: 9px 15px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 80%;
+    margin-top: 1%;
+  }
+
+  button:hover {
+    background-color: rgb(184, 57, 141);
+  }
+
+  #logo {
+    margin-top: 10px;
+  }
+
+  .box:hover{
+    background-color: rgb(207, 125, 48);
+    box-shadow: 20px -10px 10px rgb(126, 126, 196);
+    border-radius: 10px;
+  }
+  
+  .userImg {
+    border-radius: 45%;
+    
+  }
+
+  .userImg:hover {
+
+      opacity: 1;
+      -webkit-animation: flash 1.5s;
+      animation: flash 1.5s;
+    }
+    @-webkit-keyframes flash {
+      0% {
+        opacity: .4;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes flash {
+      0% {
+        opacity: .4;
+      }
+      100% {
+        opacity: 1;
+      }
+    
+  }
